@@ -1,0 +1,18 @@
+package com.quiz.service;
+
+public class QuizAnswProcess {
+
+	public static int checkAns(String userAnswer,String answer){
+		
+		if(userAnswer.equalsIgnoreCase(answer)) {
+			return 1;
+		}
+		else if(userAnswer.equals("")) {
+			
+			return -1;
+		}
+		else {
+			return 0;
+		}
+	}
+}
